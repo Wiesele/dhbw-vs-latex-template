@@ -116,7 +116,6 @@ v\udhbwvst@cls@version\space%
 \RequirePackage{array}
 \RequirePackage{longtable}
 \RequirePackage{tabu}
-\RequirePackage[subfigure]{tocloft}
 \RequirePackage{bmpsize}
 \RequirePackage{wrapfig}
 \RequirePackage{subfigure}
@@ -170,20 +169,6 @@ v\udhbwvst@cls@version\space%
   sort        = true,
   list-style  = dhbw
 }
-
-% tocloft package
-\renewcommand{\cftfigpresnum}{Abbildung }
-\renewcommand{\cfttabpresnum}{Tabelle }  
-\renewcommand{\cftfigaftersnum}{:}
-\renewcommand{\cfttabaftersnum}{:}
-\newlength{\ctmfignumwidth}
-\newlength{\ctmtabnumwidth}
-\settowidth{\ctmfignumwidth}{\cftfigpresnum}
-\settowidth{\ctmtabnumwidth}{\cfttabpresnum}
-\setlength{\cftfignumwidth}{\dimexpr\ctmfignumwidth+1.5em}
-\setlength{\cfttabnumwidth}{\dimexpr\ctmtabnumwidth+1.5em}
-\setlength{\cftfigindent}{0pt}
-\setlength{\cfttabindent}{0pt}
 
 % caption package
 \captionsetup{font={singlespacing}}
