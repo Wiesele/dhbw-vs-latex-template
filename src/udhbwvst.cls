@@ -101,7 +101,6 @@ v\udhbwvst@cls@version\space%
 \RequirePackage{setspace}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage[official]{eurosym}
 \RequirePackage[ngerman]{babel}
 \RequirePackage[autostyle=true,german=quotes]{csquotes}
 \RequirePackage[bottom]{footmisc}
