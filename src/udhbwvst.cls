@@ -11,6 +11,7 @@
 \newcommand*{\udhbwvst@var@listingname}{Quellcode}
 \newcommand*{\udhbwvst@var@listoflistingsname}{Quellcodeverzeichnis}
 \newcommand*{\udhbwvst@var@listofacronymsname}{Abkürzungsverzeichnis}
+\newcommand*{\udhbwvst@var@independencenoticename}{Selbstständigkeitserklärung}
 \newcommand*{\udhbwvst@var@defaultlocation}{Villingen-Schwenningen}
 
 % setup
@@ -662,8 +663,8 @@ v\udhbwvst@cls@version\space%
 \newcommand{\dhbwPrintIndependenceNotice}{%
   \newpage
   \phantomsection
-  \addcontentsline{toc}{section}{Selbstständigkeitserklärung}
-  \section*{Selbstständigkeitserklärung}
+  \addcontentsline{toc}{section}{\udhbwvst@var@independencenoticename}
+  \section*{\udhbwvst@var@independencenoticename}
   \input{udhbwvst-independence-notice.def}
 }
 
