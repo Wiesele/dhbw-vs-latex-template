@@ -10,7 +10,11 @@
 
 % setup
 
-\ProvidesClass{udhbwvst}[\udhbwvst@cls@date\space\udhbwvst@cls@info]
+\ProvidesClass{udhbwvst}[%
+\udhbwvst@cls@date\space%
+v\udhbwvst@cls@version\space%
+\udhbwvst@cls@info]
+
 \LoadClass[12pt]{article}
 
 % load essential packages
