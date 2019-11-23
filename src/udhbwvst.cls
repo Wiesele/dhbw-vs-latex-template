@@ -7,6 +7,11 @@
 \newcommand*{\udhbwvst@var@defaultshortreference}{Eigene Darstellung.}
 \newcommand*{\udhbwvst@var@indirectciteprefix}{Vgl\adddot}
 \newcommand*{\udhbwvst@var@bibliographyname}{Literaturverzeichnis}
+\newcommand*{\udhbwvst@var@appendixname}{Anhang}
+\newcommand*{\udhbwvst@var@listingname}{Quellcode}
+\newcommand*{\udhbwvst@var@listoflistingsname}{Quellcodeverzeichnis}
+\newcommand*{\udhbwvst@var@listofacronymsname}{Abkürzungsverzeichnis}
+\newcommand*{\udhbwvst@var@defaultlocation}{Villingen-Schwenningen}
 
 % setup
 
@@ -173,9 +178,9 @@ v\udhbwvst@cls@version\space%
 % caption package
 \captionsetup{font={singlespacing}}
 
-% appendix packge
+% appendix package
 \newcommand*{\Appendixautorefname}{Appendix}
-\newcommand*{\Anhangautorefname}{Anhang}
+\newcommand*{\Anhangautorefname}{\udhbwvst@var@appendixname}
 
 % listings package
 \lstdefinestyle{base}{%
@@ -260,8 +265,8 @@ v\udhbwvst@cls@version\space%
   sensitive         = true
 }
 
-\renewcommand{\lstlistingname}{Quellcode}
-\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
+\renewcommand{\lstlistingname}{\udhbwvst@var@listingname}
+\renewcommand{\lstlistlistingname}{\udhbwvst@var@listoflistingsname}
 
 % titletoc package
 \contentsuse{lstlisting}{lol}
@@ -550,7 +555,7 @@ v\udhbwvst@cls@version\space%
   company logo/.store in      = \dhbwGetCompanyLogo,
   lecturer/.store in          = \dhbwGetLecturer,
   location/.store in          = \dhbwGetLocation,
-  location                    = Villingen-Schwenningen,
+  location                    = \udhbwvst@var@defaultlocation,
   date/.store in              = \dhbwGetDate,
   date                        = \today
 }
@@ -604,8 +609,8 @@ v\udhbwvst@cls@version\space%
   \ifbool{udhbwvst@if@print@loa}{%
     \newpage
     \phantomsection
-    \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-    \printacronyms[name=Abkürzungsverzeichnis]
+    \addcontentsline{toc}{section}{\udhbwvst@var@listofacronymsname}
+    \printacronyms[name=\udhbwvst@var@listofacronymsname]
     \addtocounter{table}{-1} % \printacronyms with longtable adds 1 to the table counter
   }{}
 } 
