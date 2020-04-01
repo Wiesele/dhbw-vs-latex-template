@@ -46,7 +46,10 @@
     title-style-file            = udhbwvst-title-default.def,
     title-style/.is choice,
     title-style/modern/.estyle  = {/udhbwvst/title-style-file = udhbwvst-title-modern.def},
+    title-style/modern-no-images/.estyle  = {/udhbwvst/title-style-file = udhbwvst-title-modern-no-images.def},
     title-style/default/.estyle = {/udhbwvst/title-style-file = udhbwvst-title-default.def}
+    title-style/default-no-images/.estyle  = {/udhbwvst/title-style-file = udhbwvst-title-default-no-images.def},
+
 }
 
 \ProcessPgfOptions{/udhbwvst}
