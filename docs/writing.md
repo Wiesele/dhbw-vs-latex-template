@@ -45,38 +45,38 @@ The name of the class stands for ***Unofficial DHBW Villingen-Schwenningen*** La
 
 ### Class options
 
-| Option          | Default          | Description                                                                   |
-| --------------- | ---------------- | ----------------------------------------------------------------------------- |
-| `auto-generate` | `true`           | Generates all required pages around the text.                                 |
-| `debug`         | `false`          | Loads packages `lipsum` and `blindtext` and displays `hyperref`-links.        |
-| `print-ndn`     | `true`           | Prints the non-disclosure notice.                                             |
-| `print-loa`     | `true`           | Prints the list of acronyms.                                                  |
-| `print-lof`     | `true`           | Prints the list of figures.                                                   |
-| `print-lot`     | `true`           | Prints the list of tables.                                                    |
-| `print-lol`     | `true`           | Prints the list of code listings.                                             |
-| `bib-file`      | `literature.bib` | Path to the bibliography file.                                                |
-| `plantuml`      | `false`          | Loads the `plantuml` package.                                                 |
-| `title-style`   | `default`        | Loads the specified title page style. Available options: `default`, `modern`. |
+| Option          | Default          | Description                                                                                                            |
+| --------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `auto-generate` | `true`           | Generates all required pages around the text.                                                                          |
+| `debug`         | `false`          | Loads packages `lipsum` and `blindtext` and displays `hyperref`-links.                                                 |
+| `print-ndn`     | `true`           | Prints the non-disclosure notice.                                                                                      |
+| `print-loa`     | `true`           | Prints the list of acronyms.                                                                                           |
+| `print-lof`     | `true`           | Prints the list of figures.                                                                                            |
+| `print-lot`     | `true`           | Prints the list of tables.                                                                                             |
+| `print-lol`     | `true`           | Prints the list of code listings.                                                                                      |
+| `bib-file`      | `literature.bib` | Path to the bibliography file.                                                                                         |
+| `plantuml`      | `false`          | Loads the `plantuml` package.                                                                                          |
+| `title-style`   | `default`        | Loads the specified title page style. Available options: `default`, `modern`, `default-no-images`, `modern-no-images`. |
 
 ### Required \dhbwSetup command
 
 In order to use the template you have to run the `\dhbwSetup{...}` command in your preamble. All parameters inside parentheses are optional. You can access any key inside your document with the `\dhbwGet*` commands.
 
-| Parameter        | Stored in              | Default                | Description                                                          | Example                 |
-| ---------------- | ---------------------- | ---------------------- | -------------------------------------------------------------------- | ----------------------- |
-| `author`         | `\dhbwGetAuthor`       | -                      | Full name of the author.                                             | Max Mustermann          |
-| `faculty`        | `\dhbwGetFaculty`      | -                      | Faculty of the author.                                               | Wirtschaft              |
-| `field of study` | `\dhbwGetFieldOfStudy` | -                      | Field of study of the author.                                        | Wirtschaftsinformatik   |
-| (`academic year`)  | `\dhbwGetAcademicYear` | -                      | Academic year of the author.                                         | 2017                    |
-| (`course`)         | `\dhbwGetCourse`       | -                      | Course of the author.                                                | B                       |
-| `title`          | `\dhbwGetTitle`        | -                      | Title of the text.                                                   | Eine Arbeit             |
-| (`subtitle`)     | `\dhbwGetSubtitle`     | -                      | Subtitle of the text                                                 | Mit einem Untertitel    |
-| `text type`      | `\dhbwGetTextType`     | -                      | Type of the text.                                                    | Projektarbeit 2         |
-| `company name`   | `\dhbwGetCompanyName`  | -                      | Name of the authors employer.                                        | Eine GmbH               |
-| (`company logo`) | `\dhbwGetCompanyLogo`  | -                      | Path to the logo of the authors employer.                            | `./assets/logo.png`     |
-| `lecturer`       | `\dhbwGetLecturer`     | -                      | Name of the lecturer of the author.                                  | Prof. Dr. Martin Kimmig |
-| (`location`)     | `\dhbwGetLocation`     | Villingen-Schwenningen | Name of the location where the author signs the independence notice. | Villingen-Schwenningen  |
-| (`date`)         | `\dhbwGetDate`         | `\today`               | When the author signs the independence notice.                       | 21. August 2019         |
+| Parameter         | Stored in              | Default                | Description                                                          | Example                 |
+| ----------------- | ---------------------- | ---------------------- | -------------------------------------------------------------------- | ----------------------- |
+| `author`          | `\dhbwGetAuthor`       | -                      | Full name of the author.                                             | Max Mustermann          |
+| `faculty`         | `\dhbwGetFaculty`      | -                      | Faculty of the author.                                               | Wirtschaft              |
+| `field of study`  | `\dhbwGetFieldOfStudy` | -                      | Field of study of the author.                                        | Wirtschaftsinformatik   |
+| (`academic year`) | `\dhbwGetAcademicYear` | -                      | Academic year of the author.                                         | 2017                    |
+| (`course`)        | `\dhbwGetCourse`       | -                      | Course of the author.                                                | B                       |
+| `title`           | `\dhbwGetTitle`        | -                      | Title of the text.                                                   | Eine Arbeit             |
+| (`subtitle`)      | `\dhbwGetSubtitle`     | -                      | Subtitle of the text                                                 | Mit einem Untertitel    |
+| `text type`       | `\dhbwGetTextType`     | -                      | Type of the text.                                                    | Projektarbeit 2         |
+| `company name`    | `\dhbwGetCompanyName`  | -                      | Name of the authors employer.                                        | Eine GmbH               |
+| (`company logo`)  | `\dhbwGetCompanyLogo`  | -                      | Path to the logo of the authors employer.                            | `./assets/logo.png`     |
+| `lecturer`        | `\dhbwGetLecturer`     | -                      | Name of the lecturer of the author.                                  | Prof. Dr. Martin Kimmig |
+| (`location`)      | `\dhbwGetLocation`     | Villingen-Schwenningen | Name of the location where the author signs the independence notice. | Villingen-Schwenningen  |
+| (`date`)          | `\dhbwGetDate`         | `\today`               | When the author signs the independence notice.                       | 21. August 2019         |
 
 ### Document structure \dhbw* commands
 
